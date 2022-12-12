@@ -1,0 +1,3 @@
+Folder containing all .cpp files for the project:
+  externals.cpp: Folder containing all classes/functions that do not need to be declared in NARC.cpp
+  NARC.cpp: Implementation of the NARC codebase
