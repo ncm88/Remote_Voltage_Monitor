@@ -29,10 +29,10 @@
    points.push(Point{5,0});
    points.count(); // 2
    
-   Further Modifications: 
+   Further Modifications by myself: 
                         Modified queue behaviour to overwrite oldest entry upon new entry pushing at max capacity.
                         Added "printqueue" function for debugging purposes.
-                        Added "copy" function for MQTT FIFO loading structure pass by value instead of referencing and modifying working structure during publish loop. See documentation for further details
+                        Added "copy" function for MQTT FIFO loading structure pass by value instead of referencing and modifying working structure during publish loop. 
 */
 
 
