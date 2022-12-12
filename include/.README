@@ -1,0 +1,4 @@
+Header files for use with the NARC:
+ config.h: Symbolic constants and global variables used in multiple .cpp files
+ externals.h: Header file for relevant data exclusive to externals.cpp
+ queue.h: Header file containing the implementation of a circular queue data structure, modified for our project's requirements
