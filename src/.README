@@ -1,3 +1,12 @@
 Folder containing all .cpp files for the project:
   externals.cpp: Folder containing all classes/functions that do not need to be declared in NARC.cpp
   NARC.cpp: Implementation of the NARC codebase
+  
+  Dynamic reconfig: On system boot/reboot
+                  1) Check EERPROM file for config object. If no object set defaults
+                  2) If valid config object found, set NetworkObject singleton members accordingly
+                  3) reconnect with new NetworkObject
+                  
+  Dynamic reconfig: On MQTT/SPI message
+                  1) If valid message, overwrite EEPROM with contents
+                  2) Force wdt reset to trigger config boot sequence
