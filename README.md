@@ -9,7 +9,7 @@ Included below is a diagram of the final PCB used in conjunction with the board 
 
 ![pm](https://user-images.githubusercontent.com/62817066/207215054-6325a705-9be0-4183-b9c1-6a432b17dace.PNG)
 
-We decided to take advantage of the ESP32's dual-core architecture to implement a symmetric multiprocessing approach to networking and measurement collection. In addition to an improved sampling rate, the shared FIFO structure in this approach allowed us to 'queue up' fully captured excursion events for publishing during disconnect periods while still retainig ability to take ongoing measurements and record new events.
+We decided to take advantage of the ESP32's dual-core architecture to implement a symmetric multiprocessing approach to networking and measurement collection. In addition to an improved sampling rate, the shared FIFO structure in this approach allowed us to 'queue up' fully captured excursion events for publishing during disconnect periods while still retaining ability to take ongoing measurements and record new events.
 
 The pictures below show the firmware control flow and the MQTT networking approach implemented respectfully. Dynamic re-configuration details are available in the .README file in the src folder
 
