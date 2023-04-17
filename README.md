@@ -1,3 +1,4 @@
+![image001](https://user-images.githubusercontent.com/62817066/232631302-dcfb17cd-7354-4d48-b595-cb2305711c41.jpg)
 # Nodal-Analysis-and-Regulation-Circuit-NARC-
 
 DISCLAIMER: Development work was versioned internally, this is the final version of my contributions to the project. All sensitive data/code has been removed and I 
