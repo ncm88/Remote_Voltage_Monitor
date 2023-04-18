@@ -1,7 +1,9 @@
+# Project Overview
+
 DISCLAIMER: Development work was versioned internally, this is the final version of my contributions to the project. All sensitive data/code has been removed and I 
 received permission from my supervisors prior to publishing this.
 
-Project Overview: Remote auxillary voltage regulation and monitoring system for edge computers installed on Teck's haul trucks
+Device: Remote auxillary voltage regulation and monitoring system for edge computers installed on Teck's haul trucks
 
 Design objective: Protect edge computer power supply from transient voltage spikes of up to ~200V and report full excursion event to database via MQTT with EC acting as broker.
 
@@ -10,7 +12,6 @@ Included below is a diagram of the final PCB used in conjunction with the board 
 ![pm](https://user-images.githubusercontent.com/62817066/207215054-6325a705-9be0-4183-b9c1-6a432b17dace.PNG)
 
 ![image001](https://user-images.githubusercontent.com/62817066/232631302-dcfb17cd-7354-4d48-b595-cb2305711c41.jpg)
-# Nodal-Analysis-and-Regulation-Circuit-NARC-
 
 We decided to take advantage of the ESP32's dual-core architecture to implement a symmetric multiprocessing approach to networking and measurement collection. In addition to an improved sampling rate, the shared FIFO structure in this approach allowed us to 'queue up' fully captured excursion events for publishing during disconnect periods while still retaining ability to take ongoing measurements and record new events.
 
