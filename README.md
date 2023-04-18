@@ -1,11 +1,9 @@
 DISCLAIMER: Development work was versioned internally, this is the final version of my contributions to the project. All sensitive data/code has been removed and I 
 received permission from my supervisors prior to publishing this.
 
-![Header] Project Overview:
+Project Overview: Remote auxillary voltage regulation and monitoring system for edge computers installed on Teck's haul trucks
 
-Context:
-
-Design objective: Protect edge computer from transient voltage spikes up to ~200V and report full excursion event to database via MQTT with EC acting as broker.
+Design objective: Protect edge computer power supply from transient voltage spikes of up to ~200V and report full excursion event to database via MQTT with EC acting as broker.
 
 Included below is a diagram of the final PCB used in conjunction with the board (ESP32) as well as a picture of the prototytpe PCB within it's enclosure. Voltage was measured via a high-resistance divider to scale voltage down to Analog I/O acceptable levels. A hall-effect current sensor for the DC line was used instead of a resistor shunt due to greater efficiency and less risk of overvolting the second Analog I/O pin. Edge Computer overvoltage management was conducted via relay and a capacitor-driven UPS was included in the board as well to retain MCU operation in the advent of system shutdowns due to overvoltage-induced disconnects. 
 
