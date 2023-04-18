@@ -1,4 +1,4 @@
-Picture of PCB below:
+Picture of PCB in enclosure below:
 
 ![image001](https://user-images.githubusercontent.com/62817066/232631302-dcfb17cd-7354-4d48-b595-cb2305711c41.jpg)
 # Nodal-Analysis-and-Regulation-Circuit-NARC-
