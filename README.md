@@ -15,7 +15,7 @@ Included below is a diagram of the final PCB used in conjunction with the board 
 
 # Remote Monitoring Functionality
 
-We decided to take advantage of the ESP32's dual-core architecture to implement a symmetric multiprocessing approach to networking and measurement collection. In addition to an improved sampling rate, the shared FIFO structure in this approach allowed us to 'queue up' fully captured excursion events for publishing during disconnect periods while still retaining ability to take ongoing measurements and record new events.
+The ESP32's dual-core architecture was used to implement a symmetric multiprocessing approach to networking and measurement collection. The system works by running a collection thread and a network thread. The measurement thread keeps a circular buffer of the last 25 measurements; when an excursion is detected, 12 more measurements are taken to capture the full spike and the full buffer is logged to EEPROM. If the network thread detects that a measurement object has been logged to EEPROM, it sends the measurement data over MQTT as soon as a valid connection is present, removing the readings from the EEPROM as it does so. In addition to an improved sampling rate, the shared FIFO structure in this approach allowed us to 'queue up' fully captured excursion events for publishing during disconnect periods while still retaining ability to take ongoing measurements and record new events.
 
 The pictures below show the firmware control flow and the MQTT networking approach implemented respectfully. Dynamic re-configuration details are available in the .README file in the src folder
 
